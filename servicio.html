@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicio Técnico | TECHNOLOGY</title>
+
+<style>
+:root{
+  --bg-main:#080c1a;
+  --neon-blue:#00e5ff;
+  --neon-violet:#7c4dff;
+  --neon-green:#18ffb2;
+  --text-main:#eaf6ff;
+  --text-muted:#a8b2d1;
+}
+
+/* ===== BODY ===== */
+body{
+  margin:0;
+  font-family:'Segoe UI', system-ui;
+  background:var(--bg-main);
+  color:var(--text-main);
+}
+
+/* ===== INTRO ===== */
+section.intro{
+  max-width:900px;
+  margin:auto;
+  padding:100px 20px;
+  text-align:center;
+}
+section.intro h1{
+  font-size:2.8rem;
+  text-shadow:0 0 20px var(--neon-blue);
+}
+section.intro p{
+  margin-top:28px;
+  color:var(--text-muted);
+  font-size:1.1rem;
+  line-height:1.7;
+}
+
+/* ===== BOTÓN PS2 ===== */
+.back-button{
+  display:inline-block;
+  margin-top:40px;
+  padding:10px 25px;
+  color:var(--neon-blue);
+  font-weight:bold;
+  text-decoration:none;
+  font-size:1rem;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,229,255,0.5);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.back-button:hover{
+  transform:scale(1.1);
+  box-shadow:0 10px 25px rgba(0,229,255,0.7);
+}
+
+/* ===== SECCIÓN SERVICIOS ===== */
+.services{
+  padding:80px 20px 100px;
+}
+.services h2{
+  text-align:center;
+  font-size:2.2rem;
+  margin-bottom:55px;
+  text-shadow:0 0 12px rgba(0,229,255,.5);
+}
+.services-container{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
+  max-width:1200px;
+  margin:auto;
+}
+.service-card{
+  background:linear-gradient(180deg,#121b3a,#0b1228);
+  border-radius:20px;
+  padding:25px 20px;
+  text-align:center;
+  box-shadow:0 20px 50px rgba(0,0,0,.6);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.service-card:hover{
+  transform: translateY(-7px);
+  box-shadow:0 25px 60px rgba(0,229,255,0.5);
+}
+.service-card img{
+  width:100%;
+  height:200px;
+  object-fit:contain;
+  border-radius:15px;
+  margin-bottom:15px;
+}
+.service-card h3{
+  font-size:1.3rem;
+  margin-bottom:12px;
+  color:var(--neon-blue);
+  text-shadow:0 0 10px rgba(0,229,255,.5);
+}
+.service-card p{
+  font-size:1rem;
+  color:var(--text-muted);
+  line-height:1.6;
+}
+
+/* ===== REPUESTOS ===== */
+.repuestos{
+  max-width:900px;
+  margin:60px auto 80px;
+  padding:20px;
+  text-align:center;
+}
+.repuestos p{
+  font-size:1rem;
+  color:var(--text-muted);
+  line-height:1.7;
+  text-align:justify;
+  text-shadow:0 0 5px rgba(0,229,255,0.2);
+}
+
+/* ===== MARCAS ===== */
+.brands{
+  padding:70px 20px;
+  text-align:center;
+}
+.brands h2{
+  font-size:2rem;
+  margin-bottom:40px;
+  text-shadow:0 0 10px var(--neon-blue);
+}
+.brands-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:25px;
+}
+.brand-name{
+  padding:15px 25px;
+  background:#121b3a;
+  border-radius:12px;
+  font-weight:bold;
+  font-size:1rem;
+  color:var(--neon-green);
+  box-shadow:0 5px 15px rgba(0,229,255,.2);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.brand-name:hover{
+  transform: scale(1.1);
+  box-shadow:0 10px 30px rgba(0,229,255,.5);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  .services-container{grid-template-columns:1fr;}
+}
+@media(max-width:600px){
+  section.intro h1{font-size:2.4rem;}
+  section.intro p{font-size:1.05rem;}
+  .brands h2{font-size:1.5rem;}
+}
+</style>
+</head>
+
+<body>
+
+<section class="intro">
+  <h1>SERVICIO TÉCNICO</h1>
+  <p>
+    Brindamos reparación de celulares con diagnóstico claro, soluciones reales y un enfoque totalmente transparente.
+Cada equipo que ingresa a nuestro servicio técnico es revisado en detalle, evaluando su estado general antes de realizar cualquier intervención. El funcionamiento del dispositivo se prueba delante del cliente para que pueda verificar el resultado del trabajo al momento de la entrega.
+
+Contamos con técnicos especializados y una atención rápida y personalizada, adaptándonos a cada caso y explicando el proceso de reparación de forma clara y sencilla. Nuestro objetivo es que el cliente entienda qué se le realiza a su equipo y se lleve una solución acorde a sus necesidades.
+  </p>
+
+  <a href="index.html" class="back-button">⬅ Volver al inicio</a>
+</section>
+
+</body>
+</html>
+
+<!-- SERVICIOS -->
+<section class="services">
+  <h2>SERVICIOS</h2>
+  <div class="services-container">
+
+    <div class="service-card">
+      <img src="pantalla.jpg" alt="Cambio de Pantalla">
+      <h3>CAMBIO DE PANTALLA</h3>
+      <p>
+        ¿Pantalla rota, con toques fantasmas, líneas, manchas o colores apagados?
+Realizamos el reemplazo de pantalla utilizando repuestos cuidadosamente seleccionados, buscando la mejor compatibilidad con el equipo. Revisamos brillo, tacto y respuesta general para asegurar un funcionamiento correcto.
+
+Además, realizamos pruebas de sensibilidad y calibración, permitiendo verificar el resultado final al momento de la entrega, para que el equipo quede listo para su uso diario.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <img src="bateria.jpg" alt="Reemplazo de Batería">
+      <h3>REEMPLAZO DE BATERÍA</h3>
+      <p>
+        Si tu batería se descarga rápidamente, no dura lo esperado o presenta fallas, realizamos el reemplazo por una batería nueva compatible con el modelo.
+Verificamos ciclos de carga, consumo energético y funcionamiento general, buscando mejorar la autonomía y el rendimiento del dispositivo.
+
+El equipo se prueba antes de la entrega para que el cliente pueda comprobar su correcto funcionamiento.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <img src="pin-carga.jpg" alt="Pin de Carga">
+      <h3>PIN DE CARGA / PLACA DE CARGA</h3>
+      <p>
+        ¿Tu celular no carga correctamente o necesitás mover el cable para que funcione?
+Reemplazamos el pin de carga o conector según el caso y revisamos conexiones internas para asegurar una carga estable y segura.
+
+Antes de la entrega se realizan pruebas de carga y funcionamiento para confirmar que el problema haya sido solucionado.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <img src="software.jpg" alt="Software y Formateo">
+      <h3>SOFTWARE / FORMATEO</h3>
+      <p>
+        Si tu teléfono funciona lento, presenta errores o problemas de sistema, realizamos formateo y optimización del software.
+Eliminamos archivos dañinos y configuraciones incorrectas que afectan el rendimiento del equipo.
+
+También ofrecemos respaldo de datos importantes y actualización del sistema según el modelo, dejando el dispositivo listo para su uso.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <img src="google.jpg" alt="Cuenta Google">
+      <h3>CUENTA GOOGLE</h3>
+      <p>
+        ¿Olvidaste la clave o el correo asociado a tu cuenta de Google?
+Realizamos la eliminación de cuenta según el modelo del dispositivo, mediante formateo y reinstalación del sistema, permitiendo que el equipo quede listo para su nuevo uso.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- REPUESTOS -->
+<section class="repuestos">
+  <p style="text-align:center;">
+    Todos los repuestos que utilizamos en nuestro servicio técnico son seleccionados cuidadosamente para garantizar compatibilidad y correcto funcionamiento.
+Trabajamos con piezas originales y alternativas premium, adaptándonos a las necesidades y presupuesto de cada cliente.
+
+Cada reparación se prueba antes de la entrega para verificar su funcionamiento.
+  </p>
+</section>
+
+<!-- MARCAS ATENDIDAS SOLO CUADROS -->
+<section class="brands">
+  <h2>MARCAS QUE ATENDEMOS</h2>
+  <div class="brands-container">
+    <div class="brand-name">Samsung</div>
+    <div class="brand-name">Motorola</div>
+    <div class="brand-name">LG</div>
+    <div class="brand-name">Huawei</div>
+    <div class="brand-name">iPhone</div>
+    <div class="brand-name">Redmi</div>
+  </div>
+</section>
+

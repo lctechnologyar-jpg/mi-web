@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PS2 | LC Mobile</title>
+
+<style>
+:root{
+  --bg-main:#080c1a;
+  --neon-blue:#00e5ff;
+  --neon-green:#18ffb2;
+  --text-main:#eaf6ff;
+  --text-muted:#a8b2d1;
+}
+
+body{
+  margin:0;
+  font-family:'Segoe UI', system-ui;
+  background:var(--bg-main);
+  color:var(--text-main);
+  text-align:center;
+  padding:40px 20px;
+}
+
+h1, h2{
+  text-shadow:0 0 15px var(--neon-blue);
+}
+h1{
+  font-size:2.8rem;
+  margin-bottom:20px;
+}
+h2{
+  font-size:2rem;
+  margin-bottom:25px;
+}
+
+p{
+  font-size:1rem;
+  line-height:1.6;
+  color:var(--text-muted);
+  max-width:900px;
+  margin:0 auto 20px auto;
+  text-align:center;
+  text-shadow:0 0 5px rgba(0,229,255,0.2);
+}
+
+.back-button{
+  display:inline-block;
+  margin-bottom:40px; /* espacio debajo del botón antes de las imágenes */
+  padding:10px 25px;
+  color:var(--neon-blue);
+  font-weight:bold;
+  text-decoration:none;
+  font-size:1rem;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,229,255,0.5);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.back-button:hover{
+  transform:scale(1.1);
+  box-shadow:0 10px 25px rgba(0,229,255,0.7);
+}
+
+.game-images{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:25px;
+  margin-bottom:40px;
+}
+.game-images img{
+  width:250px;
+  height:auto;
+  border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,229,255,0.5);
+  transition: transform .3s ease;
+}
+.game-images img:hover{
+  transform:scale(1.05);
+}
+
+.video-container{
+  max-width:800px;
+  margin:0 auto 40px auto;
+}
+.video-container video{
+  width:100%;
+  height:auto;
+  border-radius:15px;
+  box-shadow:0 15px 40px rgba(0,229,255,0.5);
+}
+
+@media(max-width:900px){
+  .game-images img{width:200px;}
+}
+@media(max-width:600px){
+  h1{font-size:2.4rem;}
+  h2{font-size:1.8rem;}
+  p{font-size:0.95rem;}
+  .game-images img{width:150px;}
+}
+</style>
+</head>
+<body>
+
+<h1>PS2 Gaming</h1>
+
+<!-- TEXTO PRINCIPAL -->
+<p>
+  En este apartado ofrecemos contenido para todos los gamers que disfrutan de la PlayStation 2 con juegos por USB, ideal para revivir los clásicos y ampliar tu biblioteca de juegos.
+Contamos con una selección de títulos probados por nuestro equipo para asegurar compatibilidad y correcto funcionamiento en consolas PS2 modificadas.
+
+Podés elegir entre distintos juegos y géneros, desde clásicos legendarios hasta títulos populares, para que puedas disfrutar sin complicaciones.
+Nuestro servicio está orientado a quienes quieren mejorar su experiencia gamer, sin necesidad de discos físicos y con carga directa desde USB.
+
+Trabajamos con configuraciones optimizadas para lograr mejor rendimiento, compatibilidad y estabilidad, para que solo te preocupes por jugar.
+</p>
+
+<!-- BOTÓN DE VOLVER ABAJO DEL TEXTO -->
+<a href="index.html" class="back-button">⬅ Volver al inicio</a>
+
+<!-- IMÁGENES DE LOS JUEGOS -->
+<div class="game-images">
+  <img src="dbz-budokai4.jpg" alt="Dragon Ball Z Budokai Tenkaichi 4">
+  <img src="efootball-2026.jpg" alt="eFootball 2026">
+  <img src="simpsons-hit-run.jpg" alt="The Simpsons Hit & Run">
+</div>
+  <p style="margin-top:10px; font-size:0.95rem; color:var(--text-muted);">
+  Y otros títulos disponibles según stock.
+</p>
+
+
+<!-- VIDEO -->
+<div class="video-container">
+  <video controls>
+    <source src="ps2-video.mp4" type="video/mp4">
+    Tu navegador no soporta la reproducción de videos.
+  </video>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TV Digital | TECHNOLOGY</title>
+
+<style>
+:root{
+  --bg-main:#080c1a;
+  --neon-blue:#00e5ff;
+  --neon-violet:#7c4dff;
+  --neon-green:#18ffb2;
+  --text-main:#eaf6ff;
+  --text-muted:#a8b2d1;
+}
+
+/* ===== BODY ===== */
+body{
+  margin:0;
+  font-family:'Segoe UI', system-ui;
+  background:var(--bg-main);
+  color:var(--text-main);
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:80px 20px;
+  text-align:center;
+}
+
+/* ===== TITULO ===== */
+h1{
+  font-size:3rem;
+  margin-bottom:20px;
+  text-shadow:0 0 20px var(--neon-blue);
+}
+
+/* ===== TEXTO DESCRIPTIVO ===== */
+.description{
+  max-width:900px;
+  margin:20px auto 40px;
+  font-size:1.2rem;
+  color:var(--text-muted);
+  line-height:1.8;
+  text-align:center;
+  text-shadow:0 0 5px rgba(0,229,255,0.2);
+}
+
+/* ===== SERVICIO MENSUAL ===== */
+.service-duration{
+  font-size:1.4rem;
+  color:var(--neon-green);
+  margin:30px 0;
+  text-shadow:0 0 10px var(--neon-green);
+}
+
+/* ===== BOTON VOLVER ===== */
+.back-button{
+  display:inline-block;
+  margin-top:40px;
+  padding:10px 25px;
+  color:var(--neon-blue);
+  font-weight:bold;
+  text-decoration:none;
+  font-size:1rem;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,229,255,0.5);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.back-button:hover{
+  transform:scale(1.1);
+  box-shadow:0 10px 25px rgba(0,229,255,0.7);
+}
+
+
+/* ===== VIDEO ===== */
+.video-container{
+  max-width:900px;
+  margin:50px auto 80px;
+}
+video{
+  width:100%;
+  height:auto;
+  border-radius:15px;
+  box-shadow:0 20px 50px rgba(0,0,0,.5);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:600px){
+  h1{font-size:2.4rem;}
+  .description{font-size:1.05rem;}
+  .service-duration{font-size:1.2rem;}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>TV DIGITAL</h1>
+
+  <div class="description">
+    ¿Pagás demasiado por servicios de TV tradicional como DirectTV u otras plataformas similares?
+Si contás con conexión a internet y un dispositivo compatible, tenemos una alternativa práctica, accesible y pensada para adaptarse a tu forma de consumir entretenimiento.
+
+Nuestro servicio de TV digital te permite acceder a una amplia variedad de contenidos audiovisuales, incluyendo canales, películas y series, sin instalaciones complejas ni costos excesivos. Podés disfrutar de todo el contenido desde dispositivos Android, computadora o Smart TV, con una experiencia estable y de buena calidad, dependiendo de la conexión disponible.
+
+Este servicio está orientado a quienes buscan optimizar gastos sin resignar entretenimiento, ofreciendo flexibilidad y comodidad para disfrutar del contenido en el hogar. Es ideal para quienes prefieren una solución moderna, simple y funcional, con acceso rápido y sin complicaciones técnicas.
+
+Brindamos un servicio claro y directo, con funcionamiento mensual, pensado para que el usuario tenga control y libertad sobre su uso, sin ataduras innecesarias.
+
+  <div class="service-duration">
+    SERVICIO MENSUAL DE 30 DIAS 
+  </div>
+
+  <!-- BOTÓN VOLVER -->
+  <a href="index.html" class="back-button">⬅ Volver al inicio</a>
+
+  <!-- VIDEO -->
+  <div class="video-container">
+    <video controls>
+      <source src="tv-digital.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </div>
+
+</div>
+
+</body>
+</html>

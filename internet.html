@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internet Ilimitado | LC TECHNOLOGY</title>
+
+<style>
+:root{
+  --bg-main:#080c1a;
+  --neon-blue:#00e5ff;
+  --neon-green:#18ffb2;
+  --text-main:#eaf6ff;
+  --text-muted:#a8b2d1;
+}
+
+/* ===== BODY ===== */
+body{
+  margin:0;
+  font-family:'Segoe UI', system-ui;
+  background:var(--bg-main);
+  color:var(--text-main);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  padding:20px;
+  text-align:center;
+}
+
+/* ===== CONTENEDOR ===== */
+.container{
+  max-width:900px;
+}
+
+/* ===== TITULO ===== */
+.container h1{
+  font-size:3rem;
+  margin-bottom:30px;
+  text-shadow:0 0 15px var(--neon-blue);
+}
+
+/* ===== TEXTO ===== */
+.container p{
+  font-size:1.2rem;
+  line-height:1.7;
+  color:var(--text-muted);
+  margin-bottom:20px;
+  text-shadow:0 0 5px rgba(0,229,255,0.2);
+}
+
+/* ===== BOTÓN IGUAL AL PS2 ===== */
+.back-button{
+  display:inline-block;
+  margin:30px 0;
+  padding:10px 25px;
+  color:var(--neon-blue);
+  font-weight:bold;
+  text-decoration:none;
+  font-size:1rem;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,229,255,0.5);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.back-button:hover{
+  transform:scale(1.1);
+  box-shadow:0 10px 25px rgba(0,229,255,0.7);
+}
+
+/* ===== PRÓXIMAMENTE ===== */
+.coming-soon{
+  font-size:1.6rem;
+  color:var(--neon-green);
+  text-shadow:0 0 15px var(--neon-green);
+  margin-top:20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:600px){
+  .container h1{font-size:2.4rem;}
+  .container p{font-size:1.05rem;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>INTERNET ILIMITADO</h1>
+
+  <p>
+    Implementamos una app exclusiva con acceso a <strong>internet ilimitado</strong> para que puedas navegar sin quedarte sin conexión en el día a día.
+    Nuestro servicio está pensado para ofrecer una experiencia de navegación continua, ideal para redes sociales, mensajería,
+    streaming de música y video, trabajo o estudio.
+  </p>
+
+  <p>
+    Disfrutá de tu conexión desde tu celular y dispositivos compatibles, accediendo a contenido en línea, comunicación en tiempo real
+    y herramientas digitales sin interrupciones constantes. Buscamos brindar una experiencia rápida, estable y segura,
+    adaptada a las necesidades de cada usuario.
+  </p>
+
+  <p>
+    Este servicio es ideal para quienes necesitan estar siempre conectados, optimizando su uso de datos y aprovechando
+    al máximo su dispositivo móvil.
+  </p>
+
+  <p style="font-size:0.95rem;">
+    El rendimiento y la velocidad pueden variar según dispositivo, zona y condiciones de red.
+  </p>
+
+  <!-- BOTÓN IGUAL AL DE PS2 -->
+  <a href="index.html" class="back-button">⬅ Volver al inicio</a>
+
+  <p class="coming-soon">PRÓXIMAMENTE</p>
+</div>
+
+</body>
+</html>
